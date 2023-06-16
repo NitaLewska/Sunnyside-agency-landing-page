@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="./styles.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet">
+  <script src="scripts.js" async></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 
@@ -17,11 +19,13 @@
   <header class="header-main flex">
     <nav class="flex">
       <img src="images/logo.svg" alt="" class="logo">
-      <ul class="flex">
-        <!-- <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li> -->
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+          aria-expanded="false">Menu</span></button>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li class="active"><a class="" href="index.html">About</a>
+        <li><a class="" href="">Services</a>
+        <li><a class="" href="">Projects</a>
+        <li><a class="uppercase primary-navigation_contact ff-serif" href="">Contact</a>
       </ul>
     </nav>
     <h1 class="ff-serif uppercase">We are creatives</h1>
@@ -30,7 +34,7 @@
     <section class="grid features-section">
       <picture class="features-section_image-transform">
         <source srcset="images/mobile/image-transform.jpg" media="(max-width: 40rem)">
-        <img src="images/desktop/image-transform.jpg" alt="" >
+        <img src="images/desktop/image-transform.jpg" alt="">
       </picture>
       <article class="features-section_article">
         <h2 class="ff-serif">Transform your brand</h2>
@@ -40,11 +44,12 @@
       </article>
       <picture class="features-section_image-standout">
         <source srcset="images/mobile/image-stand-out.jpg" media="(max-width: 40rem)">
-        <img src="images/desktop/image-stand-out.jpg" alt="" >
+        <img src="images/desktop/image-stand-out.jpg" alt="">
       </picture>
       <article class="features-section_article">
         <h2 class="ff-serif">Stand out to the right audience</h2>
-        <p class="ff-sans"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        <p class="ff-sans"> Using a collaborative formula of designers, researchers, photographers, videographers, and
+          copywriters, we’ll build and extend your brand in digital places.
         </p>
         <a href="" class="uppercase ff-serif">Learn more</a>
       </article>
@@ -52,51 +57,56 @@
     <section class="services-section">
       <article class="services-section_article">
         <h2 class="ff-serif">Graphic design</h2>
-        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential clients’ attention.</p>
       </article>
       <article class="services-section_article">
         <h2 class="ff-serif">Photography</h2>
-        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
       </article>
     </section>
     <section class="clients-section grid">
       <h2 class="uppercase ff-serif">Client testimonials</h2>
       <article class="clients-section_article">
         <img src="images/image-emily.jpg" alt="">
-        <p class="client-review">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p class="client-review">We put our trust in Sunnyside and they delivered, making sure our needs were met and
+          deadlines were always hit.</p>
         <p class="client-name ff-serif">Emily R.</p>
         <p class="client-position">Marketing Director</p>
       </article>
       <article class="clients-section_article">
         <img src="images/image-thomas.jpg" alt="">
-        <p class="client-review">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p class="client-review">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it
+          a satisfying and enjoyable experience.</p>
         <p class="client-name ff-serif">Thomas S.</p>
         <p class="client-position">Chief Operating Officer</p>
       </article>
       <article class="clients-section_article">
         <img src="images/image-jennie.jpg" alt="">
-        <p class="client-review">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p class="client-review">Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+          Highly recommended!</p>
         <p class="client-name ff-serif">Jennie F.</p>
         <p class="client-position">Business Owner</p>
       </article>
     </section>
     <section class="grid gallery-section">
-      
+
       <picture class="gallery-section_image">
         <source srcset="images/mobile/image-gallery-milkbottles.jpg" media="(max-width: 40rem)">
-        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" >
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
       </picture>
       <picture class="gallery-section_image">
         <source srcset="images/mobile/image-gallery-orange.jpg" media="(max-width: 40rem)">
-        <img src="images/desktop/image-gallery-orange.jpg" alt="" >
+        <img src="images/desktop/image-gallery-orange.jpg" alt="">
       </picture>
       <picture class="gallery-section_image">
         <source srcset="images/mobile/image-gallery-cone.jpg" media="(max-width: 40rem)">
-        <img src="images/desktop/image-gallery-cone.jpg" alt="" >
+        <img src="images/desktop/image-gallery-cone.jpg" alt="">
       </picture>
       <picture class="gallery-section_image">
         <source srcset="images/mobile/image-gallery-sugar-cubes.jpg" media="(max-width: 40rem)">
-        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" >
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
       </picture>
     </section>
   </main>
