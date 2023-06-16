@@ -28,14 +28,20 @@
   </header>
   <main>
     <section class="grid features-section">
-      <img src="images/desktop/image-transform.jpg" alt="" class="features-section_image-transform">
+      <picture class="features-section_image-transform">
+        <source srcset="images/mobile/image-transform.jpg" media="(max-width: 40rem)">
+        <img src="images/desktop/image-transform.jpg" alt="" >
+      </picture>
       <article class="features-section_article">
         <h2 class="ff-serif">Transform your brand</h2>
         <p class="ff-sans">We are a full-service creative agency specializing in helping brands grow fast.
           Engage your clients through compelling visuals that do most of the marketing for you.</p>
         <a href="" class="uppercase ff-serif">Learn more</a>
       </article>
-      <img src="images/desktop/image-stand-out.jpg" alt="" class="features-section_image-standout">
+      <picture class="features-section_image-standout">
+        <source srcset="images/mobile/image-stand-out.jpg" media="(max-width: 40rem)">
+        <img src="images/desktop/image-stand-out.jpg" alt="" >
+      </picture>
       <article class="features-section_article">
         <h2 class="ff-serif">Stand out to the right audience</h2>
         <p class="ff-sans"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
@@ -53,26 +59,45 @@
         <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
       </article>
     </section>
-    <section class="clients-section">
-      <h2>Client testimonials</h2>
-      <article>
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-        <p></p>
+    <section class="clients-section grid">
+      <h2 class="uppercase ff-serif">Client testimonials</h2>
+      <article class="clients-section_article">
+        <img src="images/image-emily.jpg" alt="">
+        <p class="client-review">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p class="client-name ff-serif">Emily R.</p>
+        <p class="client-position">Marketing Director</p>
       </article>
-      <article>
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-        <p></p>
+      <article class="clients-section_article">
+        <img src="images/image-thomas.jpg" alt="">
+        <p class="client-review">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p class="client-name ff-serif">Thomas S.</p>
+        <p class="client-position">Chief Operating Officer</p>
       </article>
-      <article>
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-        <p></p>
+      <article class="clients-section_article">
+        <img src="images/image-jennie.jpg" alt="">
+        <p class="client-review">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p class="client-name ff-serif">Jennie F.</p>
+        <p class="client-position">Business Owner</p>
       </article>
+    </section>
+    <section class="grid gallery-section">
+      
+      <picture class="gallery-section_image">
+        <source srcset="images/mobile/image-gallery-milkbottles.jpg" media="(max-width: 40rem)">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" >
+      </picture>
+      <picture class="gallery-section_image">
+        <source srcset="images/mobile/image-gallery-orange.jpg" media="(max-width: 40rem)">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="" >
+      </picture>
+      <picture class="gallery-section_image">
+        <source srcset="images/mobile/image-gallery-cone.jpg" media="(max-width: 40rem)">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="" >
+      </picture>
+      <picture class="gallery-section_image">
+        <source srcset="images/mobile/image-gallery-sugar-cubes.jpg" media="(max-width: 40rem)">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" >
+      </picture>
     </section>
   </main>
 
@@ -80,20 +105,6 @@
 
 
   <!-- 
-   Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
   About
   Services
   Projects
