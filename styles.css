@@ -104,6 +104,7 @@ select {
     --clr-dark: #24303E;
     --clr-white: #FFFFFF;
     --clr-greyish-blue: #052C3B;
+    --clr-light-green: #90D4C6;
     --clr-dark-green: #24554A;
     --clr-grey: #808397;
     --clr-dark-grey: #5B636D;
@@ -183,8 +184,8 @@ select {
 }
 
 .header-main .logo {
-    height: clamp(1.5rem, 1.098rem + 1.071vw, 2.063rem);
-    width: auto;
+    height: 2rem;
+    width: auto;    
 }
 
 .header-main>nav {
@@ -206,10 +207,11 @@ select {
     text-decoration: none;
     font-size: 1.125rem;
     color: var(--clr-white);
+    transition: color 200ms linear;
 }
 
 .primary-navigation a:hover {
-    color: var(--clr-dark);
+    color: var(--clr-greyish-blue);
 }
 
 a.primary-navigation_contact {
@@ -224,6 +226,7 @@ a.primary-navigation_contact:hover {
     background-color: rgba(255, 255, 255, 0.25);
     mix-blend-mode: normal;
     color: var(--clr-white);
+    transition: background-color 200ms linear;
 }
 
 .mobile-nav-toggle {
@@ -419,6 +422,7 @@ a.primary-navigation_contact:hover {
     opacity: 0.25;
     border-radius: 28px;
     z-index: -1;
+    transition: opacity 200ms linear;
 }
 
 .features-section_article:nth-of-type(2) a:after{
@@ -587,9 +591,56 @@ a.primary-navigation_contact:hover {
 @media (min-width: 60rem) {
     .gallery-section img {
         height: 100%;
+        aspect-ratio: unset;
     }
 
     .gallery-section {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+/* footer */
+
+.footer-main{
+    background-color: var(--clr-light-green);
+    color: var(--clr-dark-green);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.footer-main .logo {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(7%) saturate(2195%) hue-rotate(117deg) brightness(70%) contrast(94%);
+    height: 2rem;
+    width: 10.625rem;
+    margin-bottom: 2.5rem;
+}
+
+.secondary-navigation {
+    list-style: none;
+    width: 18.75rem;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-bottom: 5.5rem;
+}
+
+.secondary-navigation>li>a{
+    text-decoration: none;
+    color: var(--clr-dark-green);
+}
+
+.secondary-navigation>li>a:hover{
+    color: var(--clr-white)
+}
+
+.social-links {
+    list-style: none;
+    width: 10.25rem;
+    padding-left: 0;
+    justify-content: space-between;
+}
+
+.social-links>li>a>img:hover{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(12%) saturate(7451%) hue-rotate(251deg) brightness(120%) contrast(111%);
 }
