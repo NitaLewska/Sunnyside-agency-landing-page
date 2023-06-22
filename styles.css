@@ -172,8 +172,8 @@ select {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 2rem;
-    padding-left: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
-    padding-right: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+    padding-left: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
+    padding-right: clamp(1.5rem, 1.071rem + 2.143vw, 3rem);
     flex-direction: column;
 }
 
@@ -185,7 +185,7 @@ select {
 
 .header-main .logo {
     height: 2rem;
-    width: auto;    
+    width: auto;
 }
 
 .header-main>nav {
@@ -205,7 +205,7 @@ select {
 
 .primary-navigation a {
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 1.13rem;
     color: var(--clr-white);
     transition: color 200ms linear;
 }
@@ -215,7 +215,7 @@ select {
 }
 
 a.primary-navigation_contact {
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     border-radius: 1.75rem;
     background-color: rgba(255, 255, 255);
     mix-blend-mode: normal;
@@ -307,10 +307,10 @@ a.primary-navigation_contact:hover {
 
 .header-main>h1 {
     font-weight: 900;
-    letter-spacing: 8.75px;
+    letter-spacing: 0.58rem;
     text-align: center;
-    margin-top: 20vh;
-    font-size: (2.5rem, 1.786rem + 1.905vw, 3.5rem);
+    margin-top: 12vh;
+    font-size: clamp(2.5rem, 2.214rem + 1.429vw, 3.5rem);
     color: var(--clr-white)
 }
 
@@ -320,11 +320,11 @@ a.primary-navigation_contact:hover {
     background-image: url(images/icon-arrow-down.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 1.875rem;
-    height: 6.7rem;
+    width: 2rem;
+    height: 8rem;
     margin: 0 auto;
-    position: absolute;
-    bottom: 30vh;
+    position: relative;
+    top: 20vh;
     left: 0;
     right: 0;
     animation: bounce 0.65s;
@@ -344,7 +344,7 @@ a.primary-navigation_contact:hover {
 
 @media (min-width: 40rem) {
     .header-main>h1::after {
-        bottom: 43vh;
+        top: 11vh;
     }
 }
 
@@ -425,7 +425,7 @@ a.primary-navigation_contact:hover {
     transition: opacity 200ms linear;
 }
 
-.features-section_article:nth-of-type(2) a:after{
+.features-section_article:nth-of-type(2) a:after {
     background: #FE7766;
 }
 
@@ -601,7 +601,7 @@ a.primary-navigation_contact:hover {
 
 /* footer */
 
-.footer-main{
+.footer-main {
     background-color: var(--clr-light-green);
     color: var(--clr-dark-green);
     flex-direction: column;
@@ -625,12 +625,12 @@ a.primary-navigation_contact:hover {
     margin-bottom: 5.5rem;
 }
 
-.secondary-navigation>li>a{
+.secondary-navigation>li>a {
     text-decoration: none;
     color: var(--clr-dark-green);
 }
 
-.secondary-navigation>li>a:hover{
+.secondary-navigation>li>a:hover {
     color: var(--clr-white)
 }
 
@@ -641,6 +641,6 @@ a.primary-navigation_contact:hover {
     justify-content: space-between;
 }
 
-.social-links>li>a>img:hover{
+.social-links>li>a>img:hover {
     filter: brightness(0) saturate(100%) invert(100%) sepia(12%) saturate(7451%) hue-rotate(251deg) brightness(120%) contrast(111%);
 }
